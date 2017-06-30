@@ -832,7 +832,7 @@ function onepress_customize_register( $wp_customize ) {
 						'priority'     => 40,
 						'section'       => 'onepress_hero_images',
 						'title_format'  => esc_html__( 'Background', 'onepress'), // [live_title]
-						'max_item'      => 2, // Maximum item can add
+						'max_item'      => 3, // Maximum item can add
 
 						'fields'    => array(
 							'image' => array(
