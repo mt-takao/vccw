@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - BackWPup &#8211; WordPress Backup Plugin - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-25 12:31:52+0000\n"
+"PO-Revision-Date: 2017-07-01 13:01:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,15 +11,75 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - BackWPup &#8211; WordPress Backup Plugin - Stable (latest release)\n"
 
-#: inc/class-page-settings.php:305
+#: inc/class-page-settings.php:629
+msgid "%d seconds"
+msgstr "%d秒"
+
+#: inc/class-page-settings.php:599
+msgid "Log folder %s does not exist."
+msgstr "ログフォルダー %s がありません。"
+
+#: inc/class-page-settings.php:560
+msgid "WP Http Error: %s"
+msgstr "WP HTTP エラー: %s"
+
+#: inc/class-page-settings.php:557
+msgid "Not expected HTTP response:"
+msgstr "想定外の HTTP 応答:"
+
+#: inc/class-page-settings.php:422
+msgid "Could not copy debug info. You can simply press ctrl+C to copy it."
+msgstr "デバッグ情報をコピーできませんでした。Ctrl+C を押してコピーできます。"
+
+#: inc/class-page-settings.php:419
+msgid "Debug info copied to clipboard."
+msgstr "デバッグ情報をクリップボードへコピーしました。"
+
+#: inc/class-page-settings.php:415
+msgid "Copy Debug Info"
+msgstr "デバッグ情報をコピー"
+
+#: inc/class-page-settings.php:408
+msgid "Get Pro"
+msgstr "Pro 版を入手"
+
+#: inc/class-page-settings.php:407
+msgid "https://backwpup.com"
+msgstr "https://backwpup.com"
+
+#: inc/class-page-settings.php:403
+msgid "You will find debug information below. Click the button to copy the debug info to send to support."
+msgstr "デバッグ情報を以下に表示します。サポートへ送るにはボタンを押してデバッグ情報をコピーしてください。"
+
+#: inc/class-page-settings.php:398
+msgid "Get Debug Info"
+msgstr "デバッグ情報を取得"
+
+#: inc/class-page-settings.php:397 inc/class-page-settings.php:461
+msgid "Debug Info"
+msgstr "デバッグ情報"
+
+#: inc/class-page-settings.php:391
+msgid "Experiencing an issue and need to contact BackWPup support? Click the link below to get debug information you can send to us."
+msgstr "問題が生じて BackWPup サポートへ連絡する必要があれば、下のリンクをクリックして、サポートへ送るためのデバッグ情報を取得してください。"
+
+#: backwpup.php:145
+msgid "Join Us as a Beta Tester"
+msgstr "ベータテスターに参加"
+
+#: backwpup.php:139
+msgid "https://backwpup.com/?utm_source=BackWPup&utm_campaign=IndependenceDay&utm_medium=Link"
+msgstr "https://backwpup.com/?utm_source=BackWPup&utm_campaign=IndependenceDay&utm_medium=Link"
+
+#: inc/class-page-settings.php:307
 msgid "There is a PHP bug (<a href=\"https://bugs.php.net/43817\">bug #43817</a>), which is triggered on some versions of Windows and IIS. Checking this box will enable a workaround for that bug. Only enable if you are getting errors about &ldquo;Permission denied&rdquo; in your logs."
 msgstr "Windows と IIS の一部のバージョンで顕在化する PHP のバグ（<a href=\"https://bugs.php.net/43817\">bug #43817</a>）があります。ここをチェックするとそのバグを回避する処理を有効にできます。ログに &ldquo;Permission denied&rdquo; のエラーが出力される時だけ有効にしてください。"
 
-#: inc/class-page-settings.php:300 inc/class-page-settings.php:303
+#: inc/class-page-settings.php:302 inc/class-page-settings.php:305
 msgid "Enable compatibility with IIS on Windows."
 msgstr "Windows IIS 互換機能を有効にする。"
 
-#: inc/class-page-settings.php:297
+#: inc/class-page-settings.php:299
 msgid "Windows IIS compatibility"
 msgstr "Windows IIS 互換"
 
@@ -41,38 +101,39 @@ msgstr "バックアップアーカイブを使って <code>/wp-content/</code> 
 
 #: inc/class-destination-email.php:41
 msgid "To email address (separate with commas for multiple addresses)"
-msgstr "宛先メールアドレス（複数アドレスはコンマで区切る）"
+msgstr "宛先メールアドレス (複数アドレスはコンマで区切る)"
 
 #: inc/class-destination-dropbox.php:575
 msgid "Finishing upload session with a total of %s uploaded"
 msgstr "合計 %s をアップロードしてセッションを終了しました"
 
-#: inc/class-destination-dropbox.php:539
+#: inc/class-destination-dropbox.php:537
 msgid "Uploading %s of data"
 msgstr "データの %s をアップロード中"
 
-#: inc/class-destination-dropbox.php:520
+#: inc/class-destination-dropbox.php:517
 msgid "Beginning new file upload session"
 msgstr "新しいファイルのアップロードセッション開始"
 
 #: inc/class-cron.php:101 inc/class-destination-folder.php:209
 #: inc/class-job.php:1003 inc/class-job.php:1141 inc/class-job.php:1740
-#: inc/class-jobtype-file.php:445
+#: inc/class-jobtype-file.php:446
 msgid "Could not open path: %s"
 msgstr "パスを開けません: %s"
 
-#: inc/class-destination-dropbox.php:120 inc/class-destination-folder.php:48
+#: inc/class-destination-dropbox.php:115 inc/class-destination-folder.php:48
 #: inc/class-destination-ftp.php:68 inc/class-destination-msazure.php:85
 #: inc/class-destination-rsc.php:114 inc/class-destination-s3.php:123
 #: inc/class-destination-sugarsync.php:100
 msgid "<strong>Warning</strong>: Files belonging to this job are now tracked. Old backup archives which are untracked will not be automatically deleted."
 msgstr "<strong>注意</strong>: このジョブに含まれるファイルは追跡されます。追跡されない過去のアーカイブは自動的に削除されません。"
 
+#: assets/templates/admin-notices/beta-tester.php:3
 #: inc/class-betatester-admin-notice.php:77
 msgid "To ensure that our releases are as bug-free as possible, we need you as a beta tester!"
 msgstr "できる限りバグのないリリースのために、ベータテスターを必要としています !"
 
-#: inc/class-betatester-admin-notice.php:70
+#: backwpup.php:146 inc/class-betatester-admin-notice.php:70
 msgid "https://backwpup.com/become-backwpup-beta-tester/"
 msgstr "https://backwpup.com/become-backwpup-beta-tester/"
 
@@ -110,16 +171,16 @@ msgstr "お問い合わせ"
 msgid "Don't show again."
 msgstr "再度表示しない。"
 
-#: inc/class-become-inpsyder-widget.php:152
+#: inc/class-become-inpsyder-widget.php:156
 msgid "Work for Inpsyde"
 msgstr "Inpsyde の仕事"
 
-#: inc/class-become-inpsyder-widget.php:148
+#: inc/class-admin-notice.php:117 inc/class-become-inpsyder-widget.php:152
 #: inc/class-betatester-admin-notice.php:96 inc/class-discount-widget.php:139
 msgid "Don't show again"
 msgstr "再度表示しない"
 
-#: inc/class-become-inpsyder-widget.php:104
+#: inc/class-become-inpsyder-widget.php:108
 msgid "https://inpsyde.com/en/jobs/?utm_source=BackWPup&utm_medium=Link&utm_campaign=BecomeAnInpsyder"
 msgstr "https://inpsyde.com/en/jobs/?utm_source=BackWPup&utm_medium=Link&utm_campaign=BecomeAnInpsyder"
 
@@ -241,50 +302,50 @@ msgstr "制御端末のハングアップ検出、または制御しているプ
 msgid "Restart after getting signal."
 msgstr "シグナルを取得した後再起動します。"
 
-#. #-#-#-#-#  backwpup-code.pot (BackWPup 3.4.0)  #-#-#-#-#
+#. #-#-#-#-#  backwpup-code.pot (BackWPup 3.4.1)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#: inc/class-admin.php:381 inc/class-admin.php:401 inc/class-help.php:17
+#: inc/class-admin.php:386 inc/class-admin.php:406 inc/class-help.php:17
 #: inc/class-help.php:22 inc/class-job.php:394 inc/class-jobtype-dbcheck.php:15
 #: inc/class-jobtype-dbdump.php:15 inc/class-jobtype-file.php:15
 #: inc/class-jobtype-wpexp.php:15 inc/class-jobtype-wpplugin.php:15
 #: inc/class-page-about.php:624 inc/class-page-backwpup.php:260
-#: inc/class-page-backwpup.php:262 inc/class-page-settings.php:391
+#: inc/class-page-backwpup.php:262 inc/class-page-settings.php:514
 msgid "http://backwpup.com"
 msgstr "http://backwpup.com"
 
-#: inc/class-admin.php:215 inc/class-help.php:24
+#: inc/class-admin.php:220 inc/class-help.php:24
 msgid "http://docs.backwpup.com"
 msgstr "http://docs.backwpup.com"
 
-#: inc/class-page-settings.php:461
+#: inc/class-page-settings.php:623
 msgid "Function Disabled"
 msgstr "機能無効"
 
-#: inc/class-page-settings.php:279
+#: inc/class-page-settings.php:281
 msgid "This adds short pauses to the process. Can be used to reduce the CPU load."
 msgstr "これは処理中に短い一時停止を追加します。 CPU の負荷を軽減するために使用できます。"
 
-#: inc/class-page-settings.php:263
+#: inc/class-page-settings.php:265
 msgid "Will be used to protect job starts from unauthorized person."
 msgstr "権限のないユーザーがジョブを開始するのを防ぐために使われます。"
 
-#: inc/class-page-settings.php:252
+#: inc/class-page-settings.php:254
 msgid "Job will restart before hitting maximum execution time. Restarts will be disabled on CLI usage. If <code>ALTERNATE_WP_CRON</code> has been defined, WordPress Cron will be used for restarts, so it can take a while. 0 means no maximum."
 msgstr "ジョブは最大実行時間に到達する前に再起動されます。CLI の使用では再起動は無効化されます。<code>ALTERNATE_WP_CRON</code> が定義されている場合は WordPress Cron が再起動に使用されるので、しばらく時間がかかるかもしれません。0は最大値なしという意味です。"
 
-#: inc/class-page-settings.php:251
+#: inc/class-page-settings.php:253
 msgid "seconds."
 msgstr "秒。"
 
-#: inc/class-page-settings.php:199
+#: inc/class-page-settings.php:201
 msgid "Maximum log files in folder."
 msgstr "フォルダー内の最大ログファイル数"
 
-#: inc/class-page-settings.php:196
+#: inc/class-page-settings.php:198
 msgid "Maximum log files"
 msgstr "ログファイル数の上限"
 
-#: inc/class-page-settings.php:115
+#: inc/class-page-settings.php:117
 msgid "%s &rsaquo; Settings"
 msgstr "%s &rsaquo; 設定"
 
@@ -296,19 +357,19 @@ msgstr "%s &rsaquo; ログ"
 msgid "%s &rsaquo; Jobs"
 msgstr "%s &rsaquo; ジョブ"
 
-#: inc/class-page-settings.php:430
+#: inc/class-page-settings.php:574
 msgid "Content: <code>%s</code>"
 msgstr "Content: <code>%s</code>"
 
-#: inc/class-page-settings.php:422
+#: inc/class-page-settings.php:564
 msgid "Status-Code: <code>%d</code>"
 msgstr "ステータスコード: <code>%d</code>"
 
-#: inc/class-page-settings.php:420
+#: inc/class-page-settings.php:561
 msgid "WP Http Error: <code>%s</code>"
 msgstr "WP Http エラー: <code>%s</code>"
 
-#: inc/class-page-settings.php:418
+#: inc/class-page-settings.php:558
 msgid "<strong>Not expected HTTP response:</strong><br>"
 msgstr "<strong>期待された HTTP レスポンスではありません:</strong><br>"
 
@@ -417,83 +478,83 @@ msgstr "標準 – 低頻度アクセス"
 msgid "Standard"
 msgstr "標準"
 
-#: inc/class-page-settings.php:368
+#: inc/class-page-settings.php:370
 msgid "Query arg key=value:"
 msgstr "クエリー引数 キー=値:"
 
-#: inc/class-page-settings.php:349 inc/class-page-settings.php:352
+#: inc/class-page-settings.php:351 inc/class-page-settings.php:354
 msgid "Select WordPress User"
 msgstr "WordPress ユーザーを選択"
 
-#: inc/class-page-settings.php:344
+#: inc/class-page-settings.php:346
 msgid "Basic Auth Password:"
 msgstr "Basic 認証パスワード:"
 
-#: inc/class-page-settings.php:338
+#: inc/class-page-settings.php:340
 msgid "Basic Auth Username:"
 msgstr "Basic 認証ユーザー名:"
 
-#: inc/class-page-settings.php:331
+#: inc/class-page-settings.php:333
 msgid "Query argument"
 msgstr "クエリー引数"
 
-#: inc/class-page-settings.php:330
+#: inc/class-page-settings.php:332
 msgid "WordPress User"
 msgstr "WordPress ユーザー"
 
-#: inc/class-page-settings.php:329
+#: inc/class-page-settings.php:331
 msgid "Basic auth"
 msgstr "Basic 認証"
 
-#: inc/class-page-settings.php:322 inc/class-page-settings.php:325
+#: inc/class-page-settings.php:324 inc/class-page-settings.php:327
 msgid "Authentication method"
 msgstr "認証方法"
 
-#: inc/class-page-settings.php:316
+#: inc/class-page-settings.php:318
 msgid "If you protected your blog with HTTP basic authentication (.htaccess), or you use a Plugin to secure wp-cron.php, then use the authentication methods below."
 msgstr "HTTP ベーシック認証 (.htaccess) でブログを保護している場合、またはプラグインを使用して wp-cron.php を保護している場合、以下で認証方法を設定してください。"
 
-#: inc/class-page-settings.php:315
+#: inc/class-page-settings.php:317
 msgid "Authentication for <code>%s</code>"
 msgstr "<code>%s</code>の認証"
 
-#: inc/class-page-settings.php:292
+#: inc/class-page-settings.php:294
 msgid "This do an empty output on job working. This can help in some situations or can brake the working. You must test it."
 msgstr "これはジョブの動作中に空の出力を行います。状況によっては助けになりますが、動作を妨げる可能性があります。ご自身で必ずテストしてください。"
 
-#: inc/class-page-settings.php:287 inc/class-page-settings.php:290
+#: inc/class-page-settings.php:289 inc/class-page-settings.php:292
 msgid "Enable an empty Output on backup working."
 msgstr "バックアップ処理中に空の出力を有効にします。"
 
-#: inc/class-page-settings.php:284
+#: inc/class-page-settings.php:286
 msgid "Empty output on working"
 msgstr "処理中に空の出力"
 
-#: inc/class-page-settings.php:224
+#: inc/class-page-settings.php:226
 msgid "Debug (not translated)"
 msgstr "デバッグ (未翻訳)"
 
-#: inc/class-page-settings.php:223
+#: inc/class-page-settings.php:225
 msgid "Debug (translated)"
 msgstr "デバッグ (翻訳済)"
 
-#: inc/class-page-settings.php:222
+#: inc/class-page-settings.php:224
 msgid "Normal (not translated)"
 msgstr "標準 (未翻訳)"
 
-#: inc/class-page-settings.php:221
+#: inc/class-page-settings.php:223
 msgid "Normal (translated)"
 msgstr "標準 (翻訳済)"
 
-#: inc/class-page-settings.php:227
+#: inc/class-page-settings.php:229
 msgid "Debug log has much more informations than normal logs. It is for support and should be handled carefully. For support is the best to use a not translated log file. Usage of not translated logs can reduce the PHP memory usage too."
 msgstr "デバッグログには通常のログよりも多くの情報が含まれています。これはサポートのために使われるものであり、慎重に扱う必要があります。サポート用には未変換ログファイルを使用することをおすすめします。未変換ログは PHP のメモリ使用量を減らすこともできます。"
 
-#: inc/class-page-settings.php:215 inc/class-page-settings.php:218
+#: inc/class-page-settings.php:217 inc/class-page-settings.php:220
 msgid "Logging Level"
 msgstr "ログレベル"
 
-#: inc/class-page-settings.php:192
+#: inc/class-page-settings.php:194
 msgid "You can use absolute or relative path! Relative path is relative to %s."
 msgstr "絶対または相対パスを使用できます。相対パスは、%s に対して相対となります。"
 
@@ -583,7 +644,7 @@ msgctxt "Plugin name; Plugin Version; plugin url"
 msgid "[INFO] %1$s %2$s; A project of Inpsyde GmbH"
 msgstr "[情報] %1$s バージョン %2$s; Inpsyde GmbH のプロジェクト"
 
-#: inc/class-file.php:143
+#: inc/class-file.php:145
 msgid "Folder %1$s is not in open basedir, please use another folder."
 msgstr "フォルダー %1$s は open_basedir に含まれていません。他のフォルダーを指定してください。"
 
@@ -633,15 +694,15 @@ msgstr "転送用のソースファイルを開くことができません。"
 msgid "ZIP archive cannot be closed correctly"
 msgstr "ZIPアーカイブを正常に生成できません。"
 
-#: inc/class-admin.php:449
+#: inc/class-admin.php:454
 msgid "&mdash; No additional role for BackWPup &mdash;"
 msgstr "&mdash; BackWPupのための追加の権限はありません &mdash; "
 
-#: inc/class-admin.php:445
+#: inc/class-admin.php:450
 msgid "Add BackWPup Role"
 msgstr "BackWPup 権限の追加"
 
-#. #-#-#-#-#  backwpup-code.pot (BackWPup 3.4.0)  #-#-#-#-#
+#. #-#-#-#-#  backwpup-code.pot (BackWPup 3.4.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: inc/class-jobtype-dbcheck.php:17 inc/class-jobtype-dbdump.php:17
 #: inc/class-jobtype-file.php:17 inc/class-jobtype-wpexp.php:17
@@ -681,307 +742,283 @@ msgstr "ジョブ ID が指定されていません !"
 msgid "A job is already running."
 msgstr "ジョブがすでに実行されています。"
 
-#: inc/class-page-settings.php:516
+#: inc/class-page-settings.php:489
 msgid "Reset all settings to default"
 msgstr "すべての設定をデフォルトにリセット"
 
-#: inc/class-page-settings.php:514
+#: inc/class-page-settings.php:487
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: inc/class-page-settings.php:502
+#: inc/class-page-settings.php:709
 msgid "Loaded PHP Extensions:"
 msgstr "ロード済み PHP Extensions:"
 
-#: inc/class-page-settings.php:497
+#: inc/class-page-settings.php:704
 msgid "Disabled PHP Functions:"
 msgstr "PHP関数が無効:"
 
-#: inc/class-page-settings.php:492
+#: inc/class-page-settings.php:698
 msgid "Memory in use"
 msgstr "使用中のメモリ"
 
-#: inc/class-page-settings.php:491
+#: inc/class-page-settings.php:694
 msgid "WP maximum memory limit"
 msgstr "WP の最大メモリ制限"
 
-#: inc/class-page-settings.php:490
+#: inc/class-page-settings.php:690
 msgid "WP memory limit"
 msgstr "WP メモリ制限"
 
-#: inc/class-page-settings.php:489
+#: inc/class-page-settings.php:686
 msgid "PHP Memory limit"
 msgstr "PHP のメモリ制限"
 
-#: inc/class-page-settings.php:488
-msgid "Blog charset"
-msgstr "ブログの文字コード"
-
-#: inc/class-page-settings.php:485
+#: inc/class-page-settings.php:682
 msgid "MySQL Client encoding"
 msgstr "MySQL クライアントエンコーディング"
 
-#: inc/class-page-settings.php:484
+#: inc/class-page-settings.php:678
 msgid "Blog language"
 msgstr "ブログ言語"
 
-#: inc/class-page-settings.php:483
+#: inc/class-page-settings.php:673
 msgid "%s hours"
 msgstr "%s時間"
 
-#: inc/class-page-settings.php:483
+#: inc/class-page-settings.php:671
 msgid "Blog Time offset"
 msgstr "ブログ時間のオフセット"
 
-#: inc/class-page-settings.php:482
+#: inc/class-page-settings.php:667
 msgid "Blog Timezone"
 msgstr "ブログの時間帯"
 
-#: inc/class-page-settings.php:481
+#: inc/class-page-settings.php:663
 msgid "Blog Time"
 msgstr "ブログ時間"
 
-#: inc/class-page-settings.php:480
+#: inc/class-page-settings.php:658
 msgid "Server Time"
 msgstr "サーバー時間"
 
-#: inc/class-page-settings.php:476 inc/class-page-settings.php:478
+#: inc/class-page-settings.php:650
 msgid "CHMOD Dir"
 msgstr "CHMOD ディレクトリ"
 
-#: inc/class-page-settings.php:472 inc/class-page-settings.php:474
+#: inc/class-page-settings.php:642
 msgid "Disabled WP Cron"
 msgstr "WP Cron 無効"
 
-#: inc/class-page-settings.php:468 inc/class-page-settings.php:470
+#: inc/class-page-settings.php:634
 msgid "Alternative WP Cron"
 msgstr "代替 WP cron"
 
-#: inc/class-page-settings.php:466
+#: inc/class-page-settings.php:627
 msgid "Maximum execution time"
 msgstr "最大実行時間"
 
-#: inc/class-page-settings.php:470 inc/class-page-settings.php:474
+#: inc/class-page-settings.php:638 inc/class-page-settings.php:646
 msgid "Off"
 msgstr "オフ"
 
-#: inc/class-page-settings.php:468 inc/class-page-settings.php:472
+#: inc/class-page-settings.php:636 inc/class-page-settings.php:644
 msgid "On"
 msgstr "オン"
 
-#: inc/class-page-settings.php:465
+#: inc/class-page-settings.php:619
 msgid "Current PHP user"
 msgstr "現在の PHP ユーザー"
 
-#: inc/class-page-settings.php:460
+#: inc/class-page-settings.php:615
 msgid "PHP SAPI"
 msgstr "PHP SAPI"
 
-#: inc/class-page-settings.php:459
+#: inc/class-page-settings.php:611
 msgid "Operating System"
 msgstr "オペレーティングシステム"
 
-#: inc/class-page-settings.php:458
+#: inc/class-page-settings.php:607
 msgid "Server"
 msgstr "サーバー"
 
-#: inc/class-page-settings.php:453
+#: inc/class-page-settings.php:601
 msgid "Log folder %s is not writable."
 msgstr "ログフォルダー %s は書き込み可能ではありません。"
 
-#: inc/class-page-settings.php:451
-msgid "Logs folder %s not exist."
-msgstr "ログフォルダー %s は存在しません。"
-
-#: inc/class-page-settings.php:449
-msgid "Log folder:"
-msgstr "ログ用フォルダー:"
-
-#: inc/class-page-settings.php:442
+#: inc/class-page-settings.php:590
 msgid "Temporary folder %s is not writable."
 msgstr "一時フォルダー %s は書き込み可能ではありません。"
 
-#: inc/class-page-settings.php:440
+#: inc/class-page-settings.php:588
 msgid "Temp folder %s doesn't exist."
 msgstr "一時フォルダー %s は存在しません。"
 
-#: inc/class-page-settings.php:438
-msgid "Temp folder:"
-msgstr "一時フォルダー:"
-
-#: inc/class-page-settings.php:434
+#: inc/class-page-settings.php:577
 msgid "Response Test O.K."
 msgstr "応答テストO.K."
 
-#: inc/class-page-settings.php:413
-msgid "Server self connect:"
-msgstr "サーバーの自己接続:"
-
-#: inc/class-page-settings.php:411
-msgid "WP-Cron url:"
-msgstr "WP-Cron URL:"
-
-#: inc/class-page-settings.php:409
+#: inc/class-page-settings.php:543
 msgid "unavailable"
 msgstr "利用不可"
 
-#: inc/class-page-settings.php:406
+#: inc/class-page-settings.php:540
 msgid "cURL SSL version"
 msgstr "cURL SSL のバージョン"
 
-#: inc/class-page-settings.php:405 inc/class-page-settings.php:409
+#: inc/class-page-settings.php:536
 msgid "cURL version"
 msgstr "cURL のバージョン"
 
-#: inc/class-page-settings.php:402
+#: inc/class-page-settings.php:532
 msgid "MySQL version"
 msgstr "MySQL のバージョン"
 
-#: inc/class-page-settings.php:401
+#: inc/class-page-settings.php:522
 msgid "PHP version"
 msgstr "PHP のバージョン"
 
-#: inc/class-page-settings.php:393
+#: inc/class-page-settings.php:517
 msgid "BackWPup Pro version"
 msgstr "BackWPup Pro 版"
 
-#: inc/class-page-settings.php:391
+#: inc/class-page-settings.php:515
 msgid "Get pro."
 msgstr "Pro 版を入手する"
 
-#: inc/class-page-settings.php:391
+#: inc/class-page-settings.php:511
 msgid "BackWPup version"
 msgstr "BackWPup のバージョン"
 
-#: inc/class-page-settings.php:389
+#: inc/class-page-settings.php:506
 msgid "WordPress version"
 msgstr "WordPress のバージョン"
 
-#: inc/class-page-settings.php:387 inc/class-page-settings.php:388
+#: inc/class-page-settings.php:470 inc/class-page-settings.php:471
 msgid "Value"
 msgstr "値"
 
-#: inc/class-page-settings.php:387 inc/class-page-settings.php:388
+#: inc/class-page-settings.php:470 inc/class-page-settings.php:471
 msgid "Setting"
 msgstr "設定"
 
-#: inc/class-page-settings.php:276
+#: inc/class-page-settings.php:278
 msgid "maximum"
 msgstr "最大"
 
-#: inc/class-page-settings.php:275
+#: inc/class-page-settings.php:277
 msgid "medium"
 msgstr "中"
 
-#: inc/class-page-settings.php:274
+#: inc/class-page-settings.php:276
 msgid "minimum"
 msgstr "最小"
 
-#: inc/class-page-settings.php:273
+#: inc/class-page-settings.php:275
 msgid "disabled"
 msgstr "無効"
 
-#: inc/class-page-settings.php:267 inc/class-page-settings.php:270
+#: inc/class-page-settings.php:269 inc/class-page-settings.php:272
 msgid "Reduce server load"
 msgstr "サーバーの負荷を軽減"
 
-#: inc/class-page-settings.php:259
+#: inc/class-page-settings.php:261
 msgid "Key to start jobs externally with an URL"
 msgstr "URL で外部からジョブを開始するキー"
 
-#: inc/class-page-settings.php:248
+#: inc/class-page-settings.php:250
 msgid "Maximum PHP Script execution time"
 msgstr "最大の PHP スクリプトの実行時間"
 
-#: inc/class-page-settings.php:245
+#: inc/class-page-settings.php:247
 msgid "Maximum script execution time"
 msgstr "最大スクリプト実行時間"
 
-#: inc/class-page-settings.php:239
+#: inc/class-page-settings.php:241
 msgid "Maximum number of retries for job steps"
 msgstr "ジョブの最大再試行回数"
 
-#: inc/class-page-settings.php:236
+#: inc/class-page-settings.php:238
 msgid "There are a couple of general options for backup jobs. Set them here."
 msgstr "バックアップジョブの一般的なオプションがいくつかあります。ここではそれらを設定します。"
 
-#: inc/class-page-settings.php:209
+#: inc/class-page-settings.php:211
 msgid "Compress log files with GZip."
 msgstr "gzip でログファイルを圧縮"
 
-#: inc/class-page-settings.php:203 inc/class-page-settings.php:206
+#: inc/class-page-settings.php:205 inc/class-page-settings.php:208
 msgid "Compression"
 msgstr "圧縮"
 
-#: inc/class-page-settings.php:189
+#: inc/class-page-settings.php:191
 msgid "Log file folder"
 msgstr "ログファイル用フォルダー"
 
-#: inc/class-page-settings.php:186
+#: inc/class-page-settings.php:188
 msgid "Every time BackWPup runs a backup job, a log file is being generated. Choose where to store your log files and how many of them."
 msgstr "BackWPup のバックアップジョブを実行するたびにログファイルが生成されます。ログファイルをどのように保存するか指定します"
 
-#: inc/class-page-settings.php:173
+#: inc/class-page-settings.php:175
 msgid "Protect BackWPup folders ( Temp, Log and Backups ) with <code>.htaccess</code> and <code>index.php</code>"
 msgstr "BackWPup フォルダー ( Temp、Log および Backups ) を <code>.htaccess</code> と <code>index.php</code> で保護する"
 
-#: inc/class-page-settings.php:167 inc/class-page-settings.php:170
+#: inc/class-page-settings.php:169 inc/class-page-settings.php:172
 msgid "Protect folders"
 msgstr "フォルダーを保護"
 
-#: inc/class-page-settings.php:164
+#: inc/class-page-settings.php:166
 msgid "Security option for BackWPup"
 msgstr "BackWPup のセキュリティオプション"
 
-#: inc/class-page-settings.php:163
+#: inc/class-page-settings.php:165
 msgid "Security"
 msgstr "セキュリティー"
 
-#: inc/class-page-settings.php:157
+#: inc/class-page-settings.php:159
 msgid "Display folder sizes in the files tab when editing a job. (Might increase loading time of files tab.)"
 msgstr "ジョブの編集中にファイルタブでフォルダーのサイズを表示する。(ファイルタブのロード時間が長くなるかもしれません。)"
 
-#: inc/class-page-settings.php:151 inc/class-page-settings.php:154
+#: inc/class-page-settings.php:153 inc/class-page-settings.php:156
 msgid "Folder sizes"
 msgstr "フォルダーサイズ"
 
-#: inc/class-page-settings.php:145
+#: inc/class-page-settings.php:147
 msgid "Show BackWPup links in admin bar."
 msgstr "管理バーに BackWPup リンクを表示。"
 
-#: inc/class-page-settings.php:142
+#: inc/class-page-settings.php:144
 msgid "Admin Bar"
 msgstr "管理バー"
 
-#: inc/class-page-settings.php:139
+#: inc/class-page-settings.php:141
 msgid "Admin bar"
 msgstr "管理バー"
 
-#: inc/class-page-settings.php:136
+#: inc/class-page-settings.php:138
 msgid "Do you want to see BackWPup in the WordPress admin bar?"
 msgstr "WordPress の管理バーに BackWPup を表示しますか ?"
 
-#: inc/class-page-settings.php:135
+#: inc/class-page-settings.php:137
 msgid "Display Settings"
 msgstr "表示設定"
 
-#: inc/class-page-settings.php:117
+#: inc/class-page-settings.php:119
 msgid "Information"
 msgstr "情報"
 
-#: inc/class-page-settings.php:117
+#: inc/class-page-settings.php:119
 msgid "API Keys"
 msgstr "API キー"
 
-#: inc/class-page-settings.php:117
+#: inc/class-page-settings.php:119
 msgid "Network"
 msgstr "ネットワーク"
 
-#: inc/class-page-settings.php:104
+#: inc/class-page-settings.php:106
 msgid "Settings saved"
 msgstr "設定を保存しました。"
 
-#: inc/class-page-settings.php:61
+#: inc/class-page-settings.php:63
 msgid "Settings reset to default"
 msgstr "設定をデフォルトにリセットしました。"
 
@@ -1487,7 +1524,7 @@ msgstr "宛先: %s"
 msgid "Schedule"
 msgstr "スケジュール"
 
-#: inc/class-page-editjob.php:328 inc/class-page-settings.php:117
+#: inc/class-page-editjob.php:328 inc/class-page-settings.php:119
 msgid "General"
 msgstr "一般"
 
@@ -1798,7 +1835,7 @@ msgstr "ジョブ設定を XML 形式でインポートおよびエクスポー�
 
 #: inc/class-page-about.php:567
 msgid "Database backup for additional MySQL databases"
-msgstr "追加の MySQL DB へデータベースをバックアップ"
+msgstr "別の MySQL データベースをバックアップ"
 
 #: inc/class-page-about.php:562
 msgid "Database backup as mysqldump per command line"
@@ -2130,24 +2167,24 @@ msgstr "WordPress の XML エクスポート"
 msgid "XML export"
 msgstr "XML エクスポート"
 
-#: inc/class-jobtype-file.php:434
+#: inc/class-jobtype-file.php:435
 msgid "Folder \"%s\" is not readable!"
 msgstr "フォルダー \"%s\" を読めません !"
 
-#: inc/class-jobtype-file.php:386
+#: inc/class-jobtype-file.php:387
 msgid "%1$d folders to backup."
 msgstr "%1$d 個のフォルダーをバックアップ。"
 
-#: inc/class-jobtype-file.php:384
+#: inc/class-jobtype-file.php:385
 msgid "No files/folder for the backup."
 msgstr "バックアップ対象のファイル / フォルダーがありません。"
 
-#: inc/class-jobtype-file.php:357 inc/class-jobtype-file.php:361
-#: inc/class-jobtype-file.php:378
+#: inc/class-jobtype-file.php:358 inc/class-jobtype-file.php:362
+#: inc/class-jobtype-file.php:379
 msgid "Added \"%s\" to backup file list"
 msgstr "\"%s\" をリストに追加しました。"
 
-#: inc/class-jobtype-file.php:237
+#: inc/class-jobtype-file.php:238
 msgid "%d. Trying to make a list of folders to back up&#160;&hellip;"
 msgstr "%d. バックアップするフォルダーのリストを作成します&hellip;"
 
@@ -2203,15 +2240,15 @@ msgstr "プラグインのバックアップ"
 msgid "Backup content folder"
 msgstr "コンテンツフォルダーをバックアップ"
 
-#: inc/class-jobtype-file.php:509
+#: inc/class-jobtype-file.php:510
 msgid "Excluded by .donotbackup file!"
 msgstr ".donotbackup ファイルによって除外 !"
 
-#: inc/class-jobtype-file.php:497
+#: inc/class-jobtype-file.php:498
 msgid "Exclude:"
 msgstr "除外:"
 
-#: inc/class-jobtype-file.php:494
+#: inc/class-jobtype-file.php:495
 msgid "Path as set by user (symlink?): %s"
 msgstr "ユーザーが設定したパスとして (シンボリックリンク?): %s"
 
@@ -2479,19 +2516,19 @@ msgstr "警告:"
 msgid "Exception caught in %1$s: %2$s"
 msgstr "%1$sにキャッチされた例外: %2$s"
 
-#: inc/class-file.php:191
+#: inc/class-file.php:193
 msgid "BackWPup will not backup folders and its sub folders when this file is inside."
 msgstr "このファイルが含まれている場合 BackWPup はそのフォルダーとサブフォルダーをバックアップしません。"
 
-#: inc/class-file.php:155
+#: inc/class-file.php:157
 msgid "Folder \"%1$s\" is not writable"
 msgstr "フォルダー \"%1$s\" は書き込み可能ではありません。"
 
-#: inc/class-file.php:149
+#: inc/class-file.php:151
 msgid "Cannot create folder: %1$s"
 msgstr "フォルダーを作成できません: %1$s"
 
-#: inc/class-file.php:138
+#: inc/class-file.php:140
 msgid "Folder %1$s not allowed, please use another folder."
 msgstr "フォルダー %1$s は許可されていません。別のフォルダーを使用してください。"
 
@@ -3192,7 +3229,6 @@ msgid "SSL-FTP connection"
 msgstr "SSL-FTP 接続"
 
 #: inc/class-destination-ftp.php:87 inc/class-page-logs.php:257
-#: inc/class-page-settings.php:466
 msgid "seconds"
 msgstr "秒"
 
@@ -3288,7 +3324,7 @@ msgstr "SSL"
 #: inc/class-destination-email.php:106 inc/class-jobtype-dbdump.php:67
 #: inc/class-jobtype-dbdump.php:103 inc/class-jobtype-wpexp.php:73
 #: inc/class-jobtype-wpplugin.php:57 inc/class-page-backwpup.php:329
-#: inc/class-page-backwpup.php:404 inc/class-page-settings.php:328
+#: inc/class-page-backwpup.php:404 inc/class-page-settings.php:330
 msgid "none"
 msgstr "なし"
 
@@ -3348,131 +3384,131 @@ msgstr "テストメールを送信"
 msgid "Email address"
 msgstr "メールアドレス"
 
-#: inc/class-destination-dropbox.php:337
+#: inc/class-destination-dropbox.php:330
 msgid "One file deleted from Dropbox"
 msgid_plural "%d files deleted on Dropbox"
 msgstr[0] "%d個のファイルを Dropbox から削除しました。"
 
-#: inc/class-destination-dropbox.php:292
+#: inc/class-destination-dropbox.php:285
 msgid "Error transfering backup to %s."
 msgstr "%s へのバックアップ転送でエラーが発生。"
 
-#: inc/class-destination-dropbox.php:287
+#: inc/class-destination-dropbox.php:280
 msgid "Uploaded file size and local file size don't match."
 msgstr "アップロードされたファイルのサイズとローカルファイルのサイズが一致しません。"
 
-#: inc/class-destination-dropbox.php:283 inc/class-destination-msazure.php:286
+#: inc/class-destination-dropbox.php:276 inc/class-destination-msazure.php:286
 #: inc/class-destination-sugarsync.php:260
 msgid "Backup transferred to %s"
 msgstr "バックアップを %s へ転送完了"
 
-#: inc/class-destination-dropbox.php:270
+#: inc/class-destination-dropbox.php:265
 msgid "Uploading to Dropbox&#160;&hellip;"
 msgstr "Dropbox へアップロード中&hellip;"
 
-#: inc/class-destination-dropbox.php:266
+#: inc/class-destination-dropbox.php:261
 msgid "Not Authenticated with Dropbox!"
 msgstr "Dropbox に認証されていません !"
 
-#: inc/class-destination-dropbox.php:262
+#: inc/class-destination-dropbox.php:257
 msgid "%s available on your Dropbox"
 msgstr "Dropbox に%sが利用可能"
 
-#: inc/class-destination-dropbox.php:256
+#: inc/class-destination-dropbox.php:251
 msgid "Authenticated with Dropbox of user: %s"
 msgstr "Dropbox で認証されました。ユーザー: %s"
 
-#: inc/class-destination-dropbox.php:239
+#: inc/class-destination-dropbox.php:234
 msgid "%d. Try to send backup file to Dropbox&#160;&hellip;"
 msgstr "%d。Dropbox へバックアップファイルを送信します&hellip;"
 
-#: inc/class-destination-dropbox.php:124 inc/class-destination-folder.php:52
+#: inc/class-destination-dropbox.php:119 inc/class-destination-folder.php:52
 #: inc/class-destination-ftp.php:72 inc/class-destination-msazure.php:89
 #: inc/class-destination-rsc.php:118 inc/class-destination-s3.php:127
 #: inc/class-destination-sugarsync.php:104
 msgid "Do not delete files while syncing to destination!"
 msgstr "宛先への同期中にファイルを削除しない !"
 
-#: inc/class-destination-dropbox.php:118 inc/class-destination-folder.php:46
+#: inc/class-destination-dropbox.php:113 inc/class-destination-folder.php:46
 #: inc/class-destination-ftp.php:66 inc/class-destination-msazure.php:83
 #: inc/class-destination-rsc.php:112 inc/class-destination-s3.php:121
 #: inc/class-destination-sugarsync.php:98
 msgid "Number of files to keep in folder."
 msgstr "フォルダー内に保持するファイルの数"
 
-#: inc/class-destination-dropbox.php:111 inc/class-destination-folder.php:39
+#: inc/class-destination-dropbox.php:106 inc/class-destination-folder.php:39
 #: inc/class-destination-ftp.php:59 inc/class-destination-sugarsync.php:91
 msgid "File Deletion"
 msgstr "ファイルを削除"
 
-#: inc/class-destination-dropbox.php:106
+#: inc/class-destination-dropbox.php:101
 msgid "Specify a subfolder where your backup archives will be stored. If you use the App option from above, this folder will be created inside of Apps/BackWPup. Otherwise it will be created at the root of your Dropbox. Already exisiting folders with the same name will not be overriden."
 msgstr "バックアップアーカイブを保存するサブフォルダーを指定してください。「アプリ」オプションを使用する場合は、このフォルダーは アプリ/BackWPup の中に作成されます。それ以外の場合は Dropbox のルートに作成されます。同じ名前の既存のフォルダーは上書きされません。"
 
-#: inc/class-destination-dropbox.php:102
+#: inc/class-destination-dropbox.php:97
 msgid "Destination Folder"
 msgstr "保存先フォルダー"
 
-#: inc/class-destination-dropbox.php:98 inc/class-destination-folder.php:29
+#: inc/class-destination-dropbox.php:93 inc/class-destination-folder.php:29
 #: inc/class-destination-ftp.php:49 inc/class-destination-msazure.php:66
 #: inc/class-destination-rsc.php:95 inc/class-destination-sugarsync.php:81
 msgid "Backup settings"
 msgstr "バックアップ設定"
 
-#: inc/class-destination-dropbox.php:90
+#: inc/class-destination-dropbox.php:85
 msgid "Get full Dropbox auth code "
 msgstr "Dropbox フル認証コードを取得"
 
-#: inc/class-destination-dropbox.php:91
+#: inc/class-destination-dropbox.php:86
 msgid "BackWPup will have full read and write access to your entire Dropbox. You can specify your backup destination wherever you want, just be aware that ANY files or folders inside of your Dropbox can be overridden or deleted by BackWPup."
 msgstr "BackWPup はあなたの Dropbox 全体に対する完全な読み取りおよび書き込み権限を持ちます。バックアップの保存先は自由に指定できますが、その中にあるどのファイルもフォルダーも BackWPup によって上書きまたは削除され得ることに注意してください。"
 
-#: inc/class-destination-dropbox.php:87
+#: inc/class-destination-dropbox.php:82
 msgid "Full Access to Dropbox"
 msgstr "Dropbox へのフルアクセス"
 
-#: inc/class-destination-dropbox.php:84
+#: inc/class-destination-dropbox.php:79
 msgid "— OR —"
 msgstr "— または —"
 
-#: inc/class-destination-dropbox.php:78
+#: inc/class-destination-dropbox.php:73
 msgid "Get Dropbox App auth code"
 msgstr "Dropbox のアプリ認証コードを取得"
 
-#: inc/class-destination-dropbox.php:79
+#: inc/class-destination-dropbox.php:74
 msgid "A dedicated folder named BackWPup will be created inside of the Apps folder in your Dropbox. BackWPup will get read and write access to that folder only. You can specify a subfolder as your backup destination for this job in the destination field below."
 msgstr "BackWPup という名前の専用フォルダーが Dropbox の「アプリ」フォルダー内に作成されます。BackWPup はそのフォルダーについてのみ読み取りおよび書き込み権限を取得します。以下の宛先フィールドで、このジョブのバックアップ先とするサブフォルダーを指定できます。"
 
-#: inc/class-destination-dropbox.php:75
+#: inc/class-destination-dropbox.php:70
 msgid "App Access to Dropbox"
 msgstr "Dropbox のアプリへのアクセス"
 
-#: inc/class-destination-dropbox.php:68
+#: inc/class-destination-dropbox.php:63
 msgid "Delete Dropbox Authentication"
 msgstr "Dropbox の認証を削除"
 
-#: inc/class-destination-dropbox.php:65 inc/class-destination-sugarsync.php:45
+#: inc/class-destination-dropbox.php:60 inc/class-destination-sugarsync.php:45
 msgid "Authenticated!"
 msgstr "認証済み !"
 
-#: inc/class-destination-dropbox.php:63
+#: inc/class-destination-dropbox.php:58
 msgid "Create Account"
 msgstr "アカウントを作成"
 
-#: inc/class-destination-dropbox.php:61
+#: inc/class-destination-dropbox.php:56
 msgid "Not authenticated!"
 msgstr "認証されていません !"
 
-#: inc/class-destination-dropbox.php:59 inc/class-destination-sugarsync.php:28
+#: inc/class-destination-dropbox.php:54 inc/class-destination-sugarsync.php:28
 #: inc/class-destination-sugarsync.php:43
 msgid "Authentication"
 msgstr "認証"
 
-#: inc/class-destination-dropbox.php:55
+#: inc/class-destination-dropbox.php:50
 msgid "Login"
 msgstr "ログイン"
 
-#: inc/class-destination-dropbox.php:41 inc/class-destination-dropbox.php:344
+#: inc/class-destination-dropbox.php:36 inc/class-destination-dropbox.php:337
 msgid "Dropbox API: %s"
 msgstr "Dropbox API: %s"
 
@@ -3606,128 +3642,128 @@ msgstr "今すぐ実行"
 msgid "running"
 msgstr "実行"
 
-#: inc/class-admin.php:401
+#: inc/class-admin.php:406
 msgid "version %s"
 msgstr "バージョン %s"
 
-#: inc/class-admin.php:381
+#: inc/class-admin.php:386
 msgid "<a class=\"backwpup-get-pro\" href=\"%s\">Get BackWPup Pro now.</a>"
 msgstr "<a class=\"backwpup-get-pro\" href=\"%s\">BackWPup Proを今すぐ入手</a>"
 
-#: inc/class-admin.php:331 inc/class-admin.php:337
+#: inc/class-admin.php:336 inc/class-admin.php:342
 msgid "Cheating, huh?"
 msgstr "不正なアクセス ?"
 
-#: inc/class-admin.php:316
+#: inc/class-admin.php:321
 msgid "About"
 msgstr "About"
 
-#: inc/class-admin.php:303
+#: inc/class-admin.php:308
 msgid "Settings"
 msgstr "設定"
 
-#: inc/class-admin.php:288 inc/class-adminbar.php:106
+#: inc/class-admin.php:293 inc/class-adminbar.php:106
 msgid "Backups"
 msgstr "バックアップ"
 
-#: inc/class-admin.php:273 inc/class-adminbar.php:98
-#: inc/class-page-logs.php:328 inc/class-page-settings.php:117
+#: inc/class-admin.php:278 inc/class-adminbar.php:98
+#: inc/class-page-logs.php:328 inc/class-page-settings.php:119
 msgid "Logs"
 msgstr "ログ"
 
-#: inc/class-admin.php:258
+#: inc/class-admin.php:263
 msgid "Add new job"
 msgstr "新規ジョブを追加"
 
-#: inc/class-admin.php:243 inc/class-adminbar.php:82
-#: inc/class-page-settings.php:117
+#: inc/class-admin.php:248 inc/class-adminbar.php:82
+#: inc/class-page-settings.php:119
 msgid "Jobs"
 msgstr "ジョブ"
 
-#: inc/class-admin.php:227
+#: inc/class-admin.php:232
 msgid "Dashboard"
 msgstr "ダッシュボード"
 
-#: inc/class-admin.php:227
+#: inc/class-admin.php:232
 msgid "BackWPup Dashboard"
 msgstr "BackWPup ダッシュボード"
 
-#: inc/class-admin.php:215
+#: inc/class-admin.php:220
 msgid "Documentation"
 msgstr "ドキュメンテーション"
 
-#: backwpup.php:476
+#: backwpup.php:492
 msgid "Missing class \"%s\"."
 msgstr "不足しているクラス\"%s\""
 
-#: backwpup.php:467
+#: backwpup.php:483
 msgid "Missing function \"%s\"."
 msgstr "不足している関数\"%s\""
 
-#: backwpup.php:460
+#: backwpup.php:476
 msgid "PHP Version %1$s is to low, you need Version %2$s or above."
 msgstr "PHP のバージョン%1$sは低く、バージョン%2$s以上を必要とします。"
 
-#: backwpup.php:441 inc/class-page-about.php:537
+#: backwpup.php:457 inc/class-page-about.php:537
 msgid "Backup to SugarSync"
 msgstr "SugarSync にバックアップ"
 
-#: backwpup.php:440
+#: backwpup.php:456
 msgid "SugarSync"
 msgstr "SugarSync"
 
-#: backwpup.php:423 inc/class-page-about.php:522
+#: backwpup.php:439 inc/class-page-about.php:522
 msgid "Backup to Rackspace Cloud Files"
 msgstr "Rackspace のクラウドファイルにバックアップ"
 
-#: backwpup.php:422
+#: backwpup.php:438
 msgid "RSC"
 msgstr "RSC"
 
-#: backwpup.php:407
+#: backwpup.php:423
 msgid "Backup to Microsoft Azure (Blob)"
 msgstr "Microsoft Azure にバックアップ (Blob)"
 
-#: backwpup.php:406
+#: backwpup.php:422
 msgid "MS Azure"
 msgstr "MS Azure"
 
-#: backwpup.php:388
+#: backwpup.php:404
 msgid "Backup to an S3 Service"
 msgstr "S3 サービスにバックアップ"
 
-#: backwpup.php:387 inc/class-destination-s3.php:27
+#: backwpup.php:403 inc/class-destination-s3.php:27
 msgid "S3 Service"
 msgstr "S3サービス"
 
-#: backwpup.php:372 inc/class-page-about.php:517
+#: backwpup.php:388 inc/class-page-about.php:517
 msgid "Backup to Dropbox"
 msgstr "Dropbox にバックアップ"
 
-#: backwpup.php:371 inc/class-destination-dropbox.php:293
+#: backwpup.php:387 inc/class-destination-dropbox.php:286
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: backwpup.php:356
+#: backwpup.php:372
 msgid "Backup to FTP"
 msgstr "FTP にバックアップ"
 
-#: backwpup.php:355
+#: backwpup.php:371
 msgid "FTP"
 msgstr "FTP"
 
-#: backwpup.php:340
+#: backwpup.php:356
 msgid "Backup sent via email"
 msgstr "メールでバックアップを送信"
 
-#: backwpup.php:339
+#: backwpup.php:355
 msgid "Email"
 msgstr "メール"
 
-#: backwpup.php:324
+#: backwpup.php:340
 msgid "Backup to Folder"
 msgstr "フォルダーへバックアップ"
 
-#: backwpup.php:323 inc/class-page-backups.php:271
+#: backwpup.php:339 inc/class-page-backups.php:271
 msgid "Folder"
 msgstr "フォルダー"
